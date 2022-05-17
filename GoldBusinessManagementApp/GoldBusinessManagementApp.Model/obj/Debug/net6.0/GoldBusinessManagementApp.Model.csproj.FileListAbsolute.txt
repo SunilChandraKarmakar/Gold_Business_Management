@@ -1,0 +1,12 @@
+D:\Gold_Business_Management\GoldBusinessManagementApp\GoldBusinessManagementApp.Model\bin\Debug\net6.0\GoldBusinessManagementApp.Model.deps.json
+D:\Gold_Business_Management\GoldBusinessManagementApp\GoldBusinessManagementApp.Model\bin\Debug\net6.0\GoldBusinessManagementApp.Model.dll
+D:\Gold_Business_Management\GoldBusinessManagementApp\GoldBusinessManagementApp.Model\bin\Debug\net6.0\GoldBusinessManagementApp.Model.pdb
+D:\Gold_Business_Management\GoldBusinessManagementApp\GoldBusinessManagementApp.Model\obj\Debug\net6.0\GoldBusinessManagementApp.Model.csproj.AssemblyReference.cache
+D:\Gold_Business_Management\GoldBusinessManagementApp\GoldBusinessManagementApp.Model\obj\Debug\net6.0\GoldBusinessManagementApp.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Gold_Business_Management\GoldBusinessManagementApp\GoldBusinessManagementApp.Model\obj\Debug\net6.0\GoldBusinessManagementApp.Model.AssemblyInfoInputs.cache
+D:\Gold_Business_Management\GoldBusinessManagementApp\GoldBusinessManagementApp.Model\obj\Debug\net6.0\GoldBusinessManagementApp.Model.AssemblyInfo.cs
+D:\Gold_Business_Management\GoldBusinessManagementApp\GoldBusinessManagementApp.Model\obj\Debug\net6.0\GoldBusinessManagementApp.Model.csproj.CoreCompileInputs.cache
+D:\Gold_Business_Management\GoldBusinessManagementApp\GoldBusinessManagementApp.Model\obj\Debug\net6.0\GoldBusinessManagementApp.Model.dll
+D:\Gold_Business_Management\GoldBusinessManagementApp\GoldBusinessManagementApp.Model\obj\Debug\net6.0\refint\GoldBusinessManagementApp.Model.dll
+D:\Gold_Business_Management\GoldBusinessManagementApp\GoldBusinessManagementApp.Model\obj\Debug\net6.0\GoldBusinessManagementApp.Model.pdb
+D:\Gold_Business_Management\GoldBusinessManagementApp\GoldBusinessManagementApp.Model\obj\Debug\net6.0\ref\GoldBusinessManagementApp.Model.dll

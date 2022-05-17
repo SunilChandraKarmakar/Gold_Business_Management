@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32505.426
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldBusinessManagementApp.Model", "GoldBusinessManagementApp.Model\GoldBusinessManagementApp.Model.csproj", "{CCDC8E5C-46DF-408C-AA80-6B2D82855F80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3883AC6F-FE65-41E9-9F89-E7D7B5A12B23}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldBusinessManagementApp.Database", "GoldBusinessManagementApp.Database\GoldBusinessManagementApp.Database.csproj", "{5F4D9FF7-1DFF-4352-8F61-80575C0EAEB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldBusinessManagementApp.Repository", "GoldBusinessManagementApp.Repository\GoldBusinessManagementApp.Repository.csproj", "{B847949F-68D5-45C5-B7BA-0BAD67A50E97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldBusinessManagementApp.Manager", "GoldBusinessManagementApp.Manager\GoldBusinessManagementApp.Manager.csproj", "{03EC898E-AC0D-43A3-BFC7-B195E05453A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldBusinessManagementApp.Client", "GoldBusinessManagementApp.Client\GoldBusinessManagementApp.Client.csproj", "{86203FC4-5F92-4AEA-A7B2-1993DABD4D73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCDC8E5C-46DF-408C-AA80-6B2D82855F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCDC8E5C-46DF-408C-AA80-6B2D82855F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCDC8E5C-46DF-408C-AA80-6B2D82855F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCDC8E5C-46DF-408C-AA80-6B2D82855F80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F4D9FF7-1DFF-4352-8F61-80575C0EAEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F4D9FF7-1DFF-4352-8F61-80575C0EAEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F4D9FF7-1DFF-4352-8F61-80575C0EAEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F4D9FF7-1DFF-4352-8F61-80575C0EAEB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B847949F-68D5-45C5-B7BA-0BAD67A50E97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B847949F-68D5-45C5-B7BA-0BAD67A50E97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B847949F-68D5-45C5-B7BA-0BAD67A50E97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B847949F-68D5-45C5-B7BA-0BAD67A50E97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03EC898E-AC0D-43A3-BFC7-B195E05453A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03EC898E-AC0D-43A3-BFC7-B195E05453A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03EC898E-AC0D-43A3-BFC7-B195E05453A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03EC898E-AC0D-43A3-BFC7-B195E05453A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86203FC4-5F92-4AEA-A7B2-1993DABD4D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86203FC4-5F92-4AEA-A7B2-1993DABD4D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86203FC4-5F92-4AEA-A7B2-1993DABD4D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86203FC4-5F92-4AEA-A7B2-1993DABD4D73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD57AB71-4B11-46F5-88CB-16A6EAD59A22}
+	EndGlobalSection
+EndGlobal
