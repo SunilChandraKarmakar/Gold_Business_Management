@@ -1,7 +1,45 @@
-﻿
+﻿@model ICollection<CustomerViewModel>
+
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="row">
+    <div class="col-md-12">
+        <h4 class="text-center">Customers</h4>
+        <hr />
+        <a asp-controller="customer" asp-action="create" class="btn btn-outline-primary btn-sm mt-1 mb-4"><i class="fa-solid fa-user-plus"></i> Add Customer</a>
+    </div>
+    <div class="col-md-12">
+        <table id="example" class="table table-bordered table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Nick Name</th>
+                    <th>Full Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var customer in Model)
+                {
+                     <tr>
+                        <td>@customer.NickName</td>
+                        <td>@customer.Name</td>
+                        <td>
+                            <a asp-controller="customer" asp-action="details" asp-route-id="@customer.Id" class="btn btn-outline-info btn-sm"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                             <a asp-controller="customer" asp-action="delete" asp-route-id="@customer.Id" class="btn btn-outline-danger btn-sm"><i class="fa-solid fa-trash-can"></i> Delete</a>
+                        </td>
+                    </tr>    
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Nick Name</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
 

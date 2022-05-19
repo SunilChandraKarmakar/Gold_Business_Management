@@ -2,11 +2,24 @@ using GoldBusinessManagementApp.Manager;
 using GoldBusinessManagementApp.Manager.Contracts;
 using GoldBusinessManagementApp.Repository;
 using GoldBusinessManagementApp.Repository.Contracts;
+using NToastNotify;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add AutoMapper
+builder.Services.AddAutoMapper(typeof(Program));
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Add Toster Notifaction
+builder.Services.AddMvc().AddNToastNotifyToastr(new ToastrOptions()
+{
+    ProgressBar = true,
+    PositionClass = ToastPositions.TopRight,
+    PreventDuplicates = true,
+    CloseButton = true
+});
 
 // Add Dependency
 builder.Services.AddTransient<ICustomerManager, CustomerManager>();

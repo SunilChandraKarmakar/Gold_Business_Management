@@ -1,0 +1,39 @@
+﻿@model CustomerUpdateViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h4 class="text-center">Update Customer</h4>
+        <hr />
+    </div>
+</div>
+<div class="row d-flex justify-content-center align-items-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <form asp-controller="customer" asp-action="details" class="row g-3" autocomplete="off">
+                    <input type="hidden" asp-for="Id"/>
+                    <div class="col-md-6">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" asp-for="Name">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                     </div>
+                    <div class="col-md-6">
+                        <label for="nickName" class="form-label">Nick Name</label>
+                        <input type="text" class="form-control" id="nickName" asp-for="NickName">
+                        <span asp-validation-for="NickName" class="text-danger"></span>
+                    </div>
+                    <div class="col-12">
+                        <span class="text-danger">@ViewBag.ErrorMessage</span>
+                        <button type="submit" class="btn btn-outline-success btn-sm"><i class="fa-solid fa-floppy-disk"></i> Update</button>
+                        <a asp-controller="customer" asp-action="index" class="btn btn-outline-info btn-sm"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
