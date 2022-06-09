@@ -1,0 +1,60 @@
+﻿@model ICollection<ProductViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h4 class="text-center">Products</h4>
+        <hr />
+        <a asp-controller="product" asp-action="create" class="btn btn-outline-primary btn-sm mt-1 mb-4"><i class="fa-solid fa-user-plus"></i> Add Product</a>
+    </div>
+    <div class="col-md-12">
+        <table id="example" class="table table-bordered table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Customer Info</th>
+                    <th>Product Info</th>
+                    <th>Aditional Info</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                {
+                     <tr>
+                        <td>
+                            Full Name : @product.Customer.Name <br>
+                            Nick Name : @product.Customer.NickName
+                        </td>
+                        <td>
+                            Weight : @product.Weight <br>
+                            Amount : @product.Amount <br>
+                            <address>
+                                Details : @product.Details
+                            </address>
+                        </td>
+                        <td>
+                            Accrued Date : @product.Date/@product.Month/@product.Year <br>
+                            Code : @product.Code
+                        </td>
+                        <td>
+                            <a asp-controller="product" asp-action="details" asp-route-id="@product.Id" class="btn btn-outline-info btn-sm"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                             <a asp-controller="product" asp-action="delete" asp-route-id="@product.Id" class="btn btn-outline-danger btn-sm m-1"><i class="fa-solid fa-trash-can"></i> Delete</a>
+                        </td>
+                    </tr>    
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Accrued Date</th>
+                    <th>Customer Info</th>
+                    <th>Product Info</th>
+                    <th>Action</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+

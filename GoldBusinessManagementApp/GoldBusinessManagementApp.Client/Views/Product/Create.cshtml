@@ -1,0 +1,65 @@
+﻿@model ProductCreateViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h4 class="text-center">Create Product</h4>
+        <hr />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <form asp-controller="product" asp-action="create" class="row g-3" autocomplete="off">
+                    <div class="col-md-2">
+                        <label asp-for="Date" class="form-label">Date</label>
+                        <input type="number" class="form-control" asp-for="Date" min="1">
+                        <span asp-validation-for="Date" class="text-danger"></span>
+                     </div>
+                    <div class="col-md-2">
+                        <label asp-for="Month" class="form-label">Month</label>
+                        <input type="number" class="form-control" asp-for="Month" min="1">
+                        <span asp-validation-for="Month" class="text-danger"></span>
+                    </div>
+                     <div class="col-md-2">
+                        <label asp-for="Year" class="form-label">Year</label>
+                        <input type="number" class="form-control" asp-for="Year" min="1">
+                        <span asp-validation-for="Year" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="CustomerId" class="form-label">Select Customer</label>
+                        <select asp-for="CustomerId" asp-items="@ViewBag.Customers" class="form-control">
+                            <option value="">-- Select Customer --</option>
+                        </select>
+                        <span asp-validation-for="CustomerId" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-4">
+                        <label asp-for="Weight" class="form-label">Weight</label>
+                        <input type="text" class="form-control" asp-for="Weight">
+                        <span asp-validation-for="Weight" class="text-danger"></span>
+                    </div>
+                     <div class="col-md-4">
+                        <label asp-for="Amount" class="form-label">Amount</label>
+                        <input type="number" class="form-control" asp-for="Amount">
+                        <span asp-validation-for="Amount" class="text-danger"></span>
+                    </div>
+                      <div class="col-md-8">
+                        <label asp-for="Details" class="form-label">Details</label>
+                        <textarea class="form-control" asp-for="Details" placeholder="Please, type product details."></textarea>
+                        <span asp-validation-for="Details" class="text-danger"></span>
+                    </div>
+                    <div class="col-12">
+                        <span class="text-danger">@ViewBag.ErrorMessage</span>
+                        <button type="submit" class="btn btn-outline-success btn-sm"><i class="fa-solid fa-floppy-disk"></i> Save</button>
+                        <a asp-controller="product" asp-action="index" class="btn btn-outline-info btn-sm"><i class="fa-solid fa-circle-arrow-left"></i> Back</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

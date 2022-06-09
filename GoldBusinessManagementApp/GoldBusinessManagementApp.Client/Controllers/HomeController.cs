@@ -1,4 +1,5 @@
 ﻿using GoldBusinessManagementApp.Client.Models;
+using GoldBusinessManagementApp.Manager.Contracts;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,15 +7,23 @@ namespace GoldBusinessManagementApp.Client.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private ICustomerManager _customerManager;
+        private IProductManager _productManager;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ICustomerManager customerManager, IProductManager productManager)
         {
-            _logger = logger;
+            _customerManager = customerManager;
+            _productManager = productManager;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            var totalCustomer = await _customerManager.GetAll();
+            ViewBag.totalCustomerCount = totalCustomer.Count();
+
+            var totlProduct = await _productManager.GetAll();
+            ViewBag.totalProductCount = totlProduct.Count();
+
             return View();
         }
 

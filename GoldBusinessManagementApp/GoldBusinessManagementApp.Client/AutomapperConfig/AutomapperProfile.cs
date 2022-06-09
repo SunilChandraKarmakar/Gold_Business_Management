@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using GoldBusinessManagementApp.Client.ViewModels.Customer;
+using GoldBusinessManagementApp.Client.ViewModels.Product;
 using GoldBusinessManagementApp.Model.Models;
 
 namespace GoldBusinessManagementApp.Client.AutomapperConfig
@@ -12,6 +13,11 @@ namespace GoldBusinessManagementApp.Client.AutomapperConfig
             CreateMap<CustomerCreateViewModel, Customer>();
             CreateMap<Customer, CustomerUpdateViewModel>();
             CreateMap<CustomerUpdateViewModel, Customer>();
+
+            CreateMap<Product, ProductViewModel>();
+            CreateMap<ProductCreateViewModel, Product>();
+            CreateMap<Product, ProductUpdateViewModel>();
+            CreateMap<ProductUpdateViewModel, Product>();
         }
     }
 }

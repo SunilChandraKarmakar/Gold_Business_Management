@@ -24,6 +24,9 @@ builder.Services.AddMvc().AddNToastNotifyToastr(new ToastrOptions()
 // Add Dependency
 builder.Services.AddTransient<ICustomerManager, CustomerManager>();
 builder.Services.AddTransient<ICustomerRepository, CustomerRepository>();
+builder.Services.AddTransient<IProductManager, ProductManager>();
+builder.Services.AddTransient<IProductRepository, ProductRepository>();
+
 
 var app = builder.Build();
 

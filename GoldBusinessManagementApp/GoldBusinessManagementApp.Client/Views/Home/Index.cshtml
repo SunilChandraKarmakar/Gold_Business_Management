@@ -4,5 +4,37 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <hr />
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card border-success mb-3 text-center">
+            <h5 class="card-header">Customer</h5>
+            <div class="card-body text-success">
+                <h5 class="card-title">Total Customer - @ViewBag.totalCustomerCount</h5>
+                <p class="card-text">Go To The Customer Details Section</p>
+                <a asp-controller="customer" asp-action="index" class="btn btn-success">Customer Details</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card border-success mb-3 text-center">
+            <h5 class="card-header">Product</h5>
+            <div class="card-body text-success">
+                <h5 class="card-title">Total Product - @ViewBag.totalProductCount</h5>
+                <p class="card-text">Go To The Product Details Section</p>
+                <a asp-controller="product" asp-action="index" class="btn btn-success">Product Details</a>
+            </div>
+        </div>
+    </div>
+     <div class="col-md-4">
+        <div class="card border-success mb-3 text-center">
+            <h5 class="card-header">Product Delivery</h5>
+            <div class="card-body text-success">
+                <h5 class="card-title">Total Delivery - 0</h5>
+                <p class="card-text">Go To The Product Delivery Section</p>
+                <a href="#" class="btn btn-success">Product Details</a>
+            </div>
+        </div>
+    </div>
 </div>

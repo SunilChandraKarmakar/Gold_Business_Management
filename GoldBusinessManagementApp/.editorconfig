@@ -5,3 +5,6 @@ dotnet_diagnostic.CS8618.severity = none
 
 # CS0618: Type or member is obsolete
 dotnet_diagnostic.CS0618.severity = none
+
+# CS0108: Member hides inherited member; missing new keyword
+dotnet_diagnostic.CS0108.severity = none
