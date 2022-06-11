@@ -10,9 +10,7 @@ namespace GoldBusinessManagementApp.Database.DBConfig
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connectionString = @"Data Source = (localdb)\MSSQLLocalDB;
-                                        Initial Catalog = GoldBusinessManagementDb;
-                                        Integrated Security = True";
+            string connectionString = "workstation id=GoldBusinessManagementDb.mssql.somee.com;packet size=4096;user id=sunilkarmakar_SQLLogin_1;pwd=yr3357udu8;data source=GoldBusinessManagementDb.mssql.somee.com;persist security info=False;initial catalog=GoldBusinessManagementDb";
 
             optionsBuilder.UseSqlServer(connectionString);
             optionsBuilder.EnableSensitiveDataLogging();
